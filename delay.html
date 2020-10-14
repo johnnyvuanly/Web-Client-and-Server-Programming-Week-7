@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timeout</title>
+    </head>
+
+    <body>
+        <h1>Expect an alert in 3 seconds after page loads</h1>
+
+        <script>
+            // All browsers know this and takes two arguements
+            // Call back functions are nessessary to let the rest of JavaScript keep working
+            // 1. handler or the same as a callback function
+            // 2. what the function will do 
+            setTimeout( function() { 
+                alert('Hello! I waited 3 seconds to show this!')
+            }, 3000) // miliseconds
+        </script>
+    
+    </body>
+</html>

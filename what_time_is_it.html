@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interval</title>
+    </head>
+
+    <body>
+        <h1>What time is it?</h1>
+        <p id='time'></p>
+
+        <script>
+            
+            let timeElement = document.querySelector('#time')
+
+            // Built in function in your browser
+            // Needs two arguements handler/call back function and a timeout
+            // setInterval( function() {
+            //     let date = Date()
+            //     timeElement.innerHTML = date
+            // }, 1000) // again miliseconds
+
+            // Arrow notation form
+            // No parameters leave as empty paranthesis
+            setInterval( () => {
+                let date = Date()
+                timeElement.innerHTML = date
+            }, 1000)
+
+        </script>
+    
+    </body>
+</html>
